@@ -20,7 +20,7 @@ Create a `student` table with the following structure:
 Insert at least 3 sample records into the student table.
 
 ### Question 3: Record Update
-Update the age of the student with ID 2 to 20 years.
+Update the age of the student with ID = 2 to 20 years.
 
 ## 🗄️ Database Schema
 
@@ -44,11 +44,11 @@ CREATE TABLE student (
 
 -- Question 2: Insert 3 records
 INSERT INTO student (id, fullName, age) VALUES 
-(1, 'John Smith', 18),
-(2, 'Maria Garcia', 19),
-(3, 'David Johnson', 20);
+ (1, 'Alice Johnson', 19),
+ (2, 'Brian Smith', 18),
+ (3, 'Clara Wei', 21);
 
--- Question 3: Update age for student with ID 2
+-- Question 3: Update age for student with ID = 2 to 20
 UPDATE student 
 SET age = 20 
 WHERE id = 2;
