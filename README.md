@@ -1,45 +1,60 @@
 # 📝 Assignment: Data Manipulation and Transactions
 
-## 🎯 **Learning Objectives**
-* ➕ Create tables and define the structure of a database.
-* ✍️ Insert records into a table.
-* 🔄 Modify data in a table through updates.
-* 💻 Practice basic SQL operations that are fundamental to database management.
+# SQL Student Database Assignment
 
----
+A simple SQL database project that demonstrates basic database operations including table creation, data insertion, and record updates.
 
-## 📋 **What You'll Need**
-* 💻 A computer with internet access.
-* ✍️ A code editor (e.g., Visual Studio Code).
-* 🖥️ MySQL Workbench or another SQL database environment.
+## 📋 Project Overview
 
----
+This project completes a three-part SQL assignment focused on fundamental database operations using a student management system as an example.
 
-## 📝 **Submission Instructions**  
-📂 Write all your SQL queries in the **answers.sql** file.  
-✍️ Answer each question concisely and ensure your queries are clear and correct.  
-🗣️ Structure your responses clearly, and use comments if necessary to explain your approach.
+## 🎯 Assignment Tasks
 
----
+### Question 1: Table Creation
+Create a `student` table with the following structure:
+- `id` (INTEGER, Primary Key)
+- `fullName` (VARCHAR(100))
+- `age` (INTEGER)
 
-## 📚 **Assignment Questions**
+### Question 2: Data Insertion
+Insert at least 3 sample records into the student table.
 
-### **Question 1 🧑‍🎓**  
-**Write an SQL statement** to create a table named **student** with the following columns:  
-- **id** (an integer and the primary key)  
-- **fullName** (a text field with a maximum of 100 characters)  
-- **age** (an integer)
+### Question 3: Record Update
+Update the age of the student with ID 2 to 20 years.
 
----
+## 🗄️ Database Schema
 
-### **Question 2 ➕**  
-**Write an SQL statement** to insert at least 3 records into the **student** table.
+### Student Table
+| Column | Type | Constraints |
+|--------|------|-------------|
+| id | INTEGER | PRIMARY KEY |
+| fullName | VARCHAR(100) | NOT NULL |
+| age | INTEGER | |
 
----
+## 💻 SQL Code
 
-### **Question 3 🔄**  
-**Write an SQL statement** to update the age of the student with ID **2** to **20** in the **student** table.
+### Complete Solution
+```sql
+-- Question 1: Create student table
+CREATE TABLE student (
+    id INTEGER PRIMARY KEY,
+    fullName VARCHAR(100),
+    age INTEGER
+);
 
+-- Question 2: Insert 3 records
+INSERT INTO student (id, fullName, age) VALUES 
+(1, 'John Smith', 18),
+(2, 'Maria Garcia', 19),
+(3, 'David Johnson', 20);
+
+-- Question 3: Update age for student with ID 2
+UPDATE student 
+SET age = 20 
+WHERE id = 2;
+
+-- Verify results
+SELECT * FROM student;
 ---
 
 Good luck 🚀
