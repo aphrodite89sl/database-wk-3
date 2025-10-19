@@ -8,15 +8,13 @@ CREATE TABLE student (
     age INT
 );
 
--- Question 2: Insert records
+-- Question 2: Insert at least 3 records
 INSERT INTO student (id, fullName, age) VALUES
-(1, 'John Smith', 18),
-(2, 'Maria Garcia', 19),
-(3, 'David Johnson', 20),
-(4, 'Sarah Williams', 17),
-(5, 'Michael Brown', 21);
+  (1, 'Alice Johnson', 19),
+  (2, 'Brian Smith', 18),
+  (3, 'Clara Wei', 21);
 
--- Question 3: Update age for student with ID 2
+-- Question 3: Update age for student with ID = 2 to 20
 UPDATE student 
 SET age = 20 
 WHERE id = 2;
